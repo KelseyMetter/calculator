@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+    width: 400px;
+    /*border: 3px solid red;*/
+    background-color: black;
+    color: white;
+}
+.calc-button-row {
+    /*border: 3px solid blue;*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+.screen {
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+    padding: 20px 5px;
+    /*Brian from Microsoft coded this in pixels*/
+    font-size: 40px; /*or 35 rem*/
+}
+.calc-button {
+    background-color: rgb(204, 199, 199);
+    color: black;
+    border: none;
+    font-size: 40px;
+    height: 100px;
+    flex-basis: 24.5%; /*gives a tiny space between buttons*/
+}
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+.calc-button:active {
+    background-color: #bbbcbe;
+}
+.double {
+    flex-basis: 49.7%;
+}
+.triple {
+    flex-basis: 74.8%;
+}
+/*.functionbutton {
+    color: orange;
+    ...and apply to buttons
+}*/
+.calc-button:last-child {
+    background-color: rgb(194, 141, 42);
+    color: white;
+}
+.calc-button:last-child:hover {
+    background-color: #dfb07e;
+}
+
+
+
+
